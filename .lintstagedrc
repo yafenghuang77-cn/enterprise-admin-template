@@ -1,17 +1,5 @@
 {
-  "*.{md,json}": [
-    "prettier --cache --write"
-  ],
-  "*.{js,jsx}": [
-    "max lint --fix --eslint-only",
-    "prettier --cache --write"
-  ],
-  "*.{css,less}": [
-    "max lint --fix --stylelint-only",
-    "prettier --cache --write"
-  ],
-  "*.ts?(x)": [
-    "max lint --fix --eslint-only",
-    "prettier --cache --parser=typescript --write"
-  ]
+  "*.{js,cjs,mjs,jsx,ts,tsx}": ["eslint --fix --max-warnings=0", "prettier --write"],
+  "*.{css,less}": ["stylelint --fix --max-warnings=0", "prettier --write"],
+  "*.{md,json,yaml,yml}": ["prettier --write"]
 }

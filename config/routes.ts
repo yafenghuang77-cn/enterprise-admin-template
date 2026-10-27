@@ -1,4 +1,6 @@
 const routes = [
+  { path: '/login', component: './Auth', layout: false },
+  { path: '/register', component: './Auth', layout: false },
   {
     path: '/',
     redirect: '/home',

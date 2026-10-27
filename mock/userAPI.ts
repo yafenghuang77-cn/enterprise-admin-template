@@ -3,15 +3,19 @@ const users = [
   { id: 1, name: 'Fish', nickName: 'B', gender: 'FEMALE' },
 ];
 
+interface MockResponse {
+  json: (body: unknown) => void;
+}
+
 export default {
-  'GET /api/v1/queryUserList': (req: any, res: any) => {
+  'GET /api/v1/queryUserList': (_req: unknown, res: MockResponse) => {
     res.json({
       success: true,
       data: { list: users },
       errorCode: 0,
     });
   },
-  'PUT /api/v1/user/': (req: any, res: any) => {
+  'PUT /api/v1/user/': (_req: unknown, res: MockResponse) => {
     res.json({
       success: true,
       errorCode: 0,

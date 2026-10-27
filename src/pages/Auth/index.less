@@ -1,0 +1,304 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(420px, 1fr) minmax(480px, 1fr);
+  color: #182236;
+  background: #fff;
+}
+
+.story {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 9%;
+  color: #fff;
+  background:
+    radial-gradient(circle at 83% 25%, #344c87 0, transparent 36%),
+    linear-gradient(145deg, #17284b, #111d39 75%);
+}
+
+.story::after {
+  position: absolute;
+  right: -150px;
+  bottom: -260px;
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgb(255 255 255 / 9%);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 90px rgb(255 255 255 / 2.5%),
+    0 0 0 180px rgb(255 255 255 / 2%);
+  content: '';
+  pointer-events: none;
+}
+
+.brand,
+.mobileBrand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand:hover {
+  color: #fff;
+}
+
+.brandMark {
+  display: inline-grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 10px;
+  color: #fff;
+  background: #5278f7;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.brandLight {
+  color: #a9b8d5;
+  font-weight: 400;
+}
+
+.storyContent {
+  z-index: 1;
+  max-width: 530px;
+  margin: 80px 0;
+}
+
+.eyebrow,
+.kicker {
+  color: #8da8ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.eyebrow span {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  margin: 0 10px 3px 0;
+  background: #7899ff;
+}
+
+.story h1 {
+  margin: 25px 0;
+  font-size: clamp(38px, 3.4vw, 54px);
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+}
+
+.story h1 em {
+  color: #a9bbff;
+  font-style: normal;
+}
+
+.storyContent > p {
+  color: #b5c0d7;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.visual {
+  max-width: 430px;
+  margin-top: 54px;
+  padding: 22px;
+  border: 1px solid rgb(255 255 255 / 16%);
+  border-radius: 16px;
+  background: rgb(255 255 255 / 7%);
+  box-shadow: 0 24px 60px rgb(4 12 30 / 20%);
+}
+
+.visualTop {
+  display: flex;
+  justify-content: space-between;
+  color: #a9b9da;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.visualBody {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.visualIcon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 12px;
+  color: #c8d5ff;
+  background: rgb(117 149 255 / 23%);
+  font-size: 22px;
+}
+
+.visualBody strong,
+.visualBody small {
+  display: block;
+}
+
+.visualBody small {
+  margin-top: 5px;
+  color: #aab9d3;
+}
+
+.visualCheck {
+  margin-left: auto;
+  color: #8ae1c0;
+  font-size: 19px;
+}
+
+.visualLines {
+  display: flex;
+  gap: 7px;
+  margin-top: 28px;
+}
+
+.visualLines i {
+  height: 5px;
+  flex: 1;
+  border-radius: 4px;
+  background: rgb(169 190 255 / 35%);
+}
+
+.visualLines i:last-child {
+  background: rgb(255 255 255 / 12%);
+}
+
+.storyFooter {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  color: #a9b6d0;
+  font-size: 12px;
+}
+
+.formSide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 40px 92px;
+}
+
+.formWrap {
+  width: 100%;
+  max-width: 400px;
+}
+
+.formHeading {
+  margin-bottom: 32px;
+}
+
+.kicker {
+  color: #5278df;
+}
+
+.formHeading h2 {
+  margin: 12px 0 8px;
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+
+.formHeading p {
+  margin: 0;
+  color: #66748b;
+  font-size: 14px;
+}
+
+.notice {
+  margin-bottom: 20px;
+}
+
+.submit {
+  height: 48px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.switch {
+  margin-top: 24px;
+  color: #68768b;
+  text-align: center;
+}
+
+.switch a {
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+.demo {
+  margin-top: 36px;
+  padding: 14px 16px;
+  border: 1px solid #e4eaf5;
+  border-radius: 10px;
+  color: #66748b;
+  background: #f7f9fd;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.back {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 24px;
+  color: #68768b;
+  font-size: 13px;
+}
+
+.formFooter {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  color: #98a4b5;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.formFooter span {
+  padding: 0 6px;
+}
+
+.mobileBrand {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .story {
+    display: none;
+  }
+
+  .formSide {
+    min-height: 100vh;
+    padding: 100px 24px 90px;
+  }
+
+  .mobileBrand {
+    position: absolute;
+    top: 28px;
+    left: 24px;
+    display: flex;
+  }
+
+  .formFooter {
+    right: 24px;
+  }
+}
