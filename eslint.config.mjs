@@ -1,16 +1,13 @@
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
 import { react as aliReact } from 'eslint-config-ali';
-import { createRequire } from 'node:module';
-
-const require = createRequire(import.meta.url);
-const globals = require('globals');
-const tsParser = require('@typescript-eslint/parser');
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const react = require('eslint-plugin-react');
-const hooks = require('eslint-plugin-react-hooks');
-const a11y = require('eslint-plugin-jsx-a11y');
-const importSort = require('eslint-plugin-simple-import-sort');
-const jest = require('eslint-plugin-jest');
-const prettier = require('eslint-config-prettier');
+import prettier from 'eslint-config-prettier';
+import jest from 'eslint-plugin-jest';
+import a11y from 'eslint-plugin-jsx-a11y';
+import react from 'eslint-plugin-react';
+import hooks from 'eslint-plugin-react-hooks';
+import importSort from 'eslint-plugin-simple-import-sort';
+import globals from 'globals';
 
 const projectPlugins = { '@typescript-eslint': tsPlugin, react, 'react-hooks': hooks };
 
